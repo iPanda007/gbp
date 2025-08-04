@@ -28,7 +28,8 @@ const auth = computed(() => page.props.auth);
 const isCurrentRoute = computed(() => (url: string) => page.url === url);
 
 const activeItemStyles = computed(
-    () => (url: string) => (isCurrentRoute.value(url) ? 'text-neutral-900 dark:bg-neutral-800 dark:text-neutral-100' : ''),
+    () => (url: string) => (isCurrentRoute.value(url) ? '!text-blue-700 border-b-2 border-blue-700 pb-1'
+        : 'text-neutral-700 hover:text-blue-700'),
 );
 
 const mainNavItems: NavItem[] = [
@@ -75,12 +76,12 @@ const toggleMobileMenu = () => {
 <template>
     <div>
     <!-- Top Bar -->
-    <!-- <div class="w-full bg-neutral-100 h-10 flex items-center justify-end px-8 text-sm text-neutral-700">
+     <div class="w-full bg-neutral-100 h-[49px] flex items-center justify-end px-8 text-sm text-neutral-700">
       University portal
-    </div> -->
+    </div> 
 
     <!-- Main Navigation -->
-    <div class="bg-white relative border-b">
+    <div class="bg-white relative">
       <div class="mx-auto flex h-20 items-center justify-between px-4 md:max-w-7xl">
         <!-- Logo -->
         <div class="flex items-center mr-8" style="min-width: 120px;">
