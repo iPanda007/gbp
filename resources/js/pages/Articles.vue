@@ -59,10 +59,10 @@ function getPreview(html:any) {
       <section>
         <!-- Articles Section -->
       <div class="bg-gradient-to-r from-[#001848] to-[#001c58] text-white py-12 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-          <div class="md:w-1/2">
+        <div class="max-w-[70%] mx-auto flex flex-col md:flex-row  gap-10">
+          <div class="md:w-1/2 mt-8">
             <h2 class="text-2xl font-bold mb-4">Browse all articles</h2>
-            <p>
+            <p class="w-[90%]">
               Discover thought-provoking insights from universities and institutions across the globe. Use filters and categories to find the content.
             </p>
           </div>
@@ -76,21 +76,27 @@ function getPreview(html:any) {
         <div class="p-4 max-w-7xl mx-auto">
          <div class="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
             <div class="flex gap-4 w-full md:w-auto">
-                <select v-model="selectedCategory" class="border p-2 rounded w-full md:w-auto text-gboblack">
+              <div class="border rounded p-1">
+                <select v-model="selectedCategory" class="p-2 w-full md:w-auto text-gboblack outline-none">
                     <option value=""><span class="text-gray-400">Sort by:</span> Category</option>
                     <option v-for="category in props.categories" :key="category.id" :value="category.id">{{ category.name }}</option>
                 </select>
-                <select v-model="selectedTag" class="border p-2 rounded w-full md:w-auto text-gboblack">
+              </div>
+                
+               <div class="border rounded p-1">
+                 <select v-model="selectedTag" class=" p-2 rounded w-full md:w-auto text-gboblack outline-none">
                     <option value=""><span class="text-gray-400">Sort by:</span> Tag</option>
                     <option v-for="tag in props.tags" :key="tag.id" :value="tag.id">{{ tag.name }}</option>
                 </select>
+               </div>
+               
             </div>
             <input
             type="text"
             v-model="search"
             placeholder="Search"
             name="search"
-            class="border rounded p-2 w-full md:w-64 text-gboblack placeholder-gray-400"
+            class="border rounded p-2 w-full md:w-84 text-gboblack placeholder-gray-400"
             />
         </div>
         <div class="">

@@ -11,6 +11,12 @@ export { default as NavigationMenuViewport } from './NavigationMenuViewport.vue'
 
 
 export const navigationMenuTriggerStyle = cva(
-  'group inline-flex h-12 items-center justify-center px-3 text-base font-medium text-neutral-700 hover:text-blue-700 focus:outline-none transition-colors relative'
+  'group inline-flex h-12 items-center justify-center px-3 text-base font-medium text-neutral-700 hover:text-blue-700 focus:outline-none transition-colors relative', {
+    variants: {
+      mobile: {
+        true: 'inline-block h-auto px-2 py-2'
+      }
+    }
+  }
 )
 

@@ -23,7 +23,7 @@ import {Link} from '@inertiajs/vue3';
     </div>
 
     <!-- Basic Plan -->
-    <div class="border rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between">
+    <div class="border-2 border-gray-100 hover:border-gray-400 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between">
       <div>
         <span class="inline-block bg-gray-200 text-sm font-bold px-4 py-1 rounded-full mb-4 text-black">Basic plan</span>
         <p class="text-gray-700 text-sm mb-8 px-4">
@@ -40,12 +40,12 @@ import {Link} from '@inertiajs/vue3';
       </div>
       <div class="mx-auto">
         <p class="text-3xl font-bold mb-4 text-black">$49<span class="text-base font-normal text-gray-300 mb-4">/month</span></p>
-    <Link :href="route('basic-plan')" class="w-80 cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-2 rounded-full">Subscribe</Link>
+    <Link :href="route('basic-plan')" class="w-80 cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-3.5 rounded-full">Subscribe</Link>
       </div>
     </div>
 
     <!-- Premium Plan -->
-    <div class="border-2 border-yellow-400 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between relative">
+    <div class="border-2 border-yellow-200 hover:border-yellow-400 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between relative">
       <div class="absolute -top-3 -right-3">
         <img src="/images/logo/Premium.png" alt="Crown" class="w-8 h-8" />
       </div>
@@ -68,7 +68,7 @@ import {Link} from '@inertiajs/vue3';
       </div>
       <div class="mx-auto">
         <p class="text-3xl font-bold mb-4 text-black">$100<span class="text-base font-normal text-gray-300 mb-4">/month</span></p>
-        <Link :href="route('premium-plan')" class="w-80 cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-2 rounded-full">Subscribe</Link>
+        <Link :href="route('premium-plan')" class="w-80 cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-3.5 rounded-full">Subscribe</Link>
       </div>
     </div>
   </div>

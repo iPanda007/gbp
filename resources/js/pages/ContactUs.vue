@@ -56,10 +56,10 @@ const submitForm = () => {
       <section>
         <!-- Contact Us -->
         <div class="bg-gradient-to-r from-[#001848] to-[#001c58] text-white py-12 px-6">
-          <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-            <div class="md:w-1/2">
+          <div class="max-w-[70%] mx-auto flex flex-col md:flex-row gap-10">
+            <div class="md:w-1/2 mt-8">
               <h2 class="text-2xl font-bold mb-4">Get in touch</h2>
-              <p>
+              <p class="w-[90%]">
                 Have a question, feedback, or partnership inquiry? We’re here to help. Reach out to our team and we’ll get back to you as soon as possible.
               </p>
             </div>
@@ -69,25 +69,25 @@ const submitForm = () => {
           </div>
         </div>
       </section>
-      <section class="bg-white">
+      <section class="bg-gray-50">
         <div class="mx-auto grid md:grid-cols-2 gap-8">
 
           <!-- Left Side: Form -->
-          <div class="custom-padding">
+          <div class="custom-padding ml-50">
             <h2 class="text-2xl md:text-3xl font-bold text-[#001848] mb-6">Send a message</h2>
 
             <form @submit.prevent="submitForm" class="space-y-4">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input v-model="form.firstName" type="text" placeholder="First Name*" required
-                      class="border rounded px-4 py-2 w-full outline-blue-500 placeholder-zinc-500 text-black" />
+                      class="border-1 border-[#EEEEEE] rounded px-4 py-2 w-full outline-blue-500 placeholder-zinc-500 bg-white text-black" />
                 <input v-model="form.lastName" type="text" placeholder="Last Name*" required
-                      class="border rounded px-4 py-2 w-full outline-blue-500 placeholder-zinc-500 text-black" />
+                      class="border-1 border-[#EEEEEE] rounded px-4 py-2 w-full outline-blue-500 placeholder-zinc-500 bg-white  text-black" />
               </div>
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <input v-model="form.email" type="email" placeholder="Email Address*" required
-                      class="border rounded px-4 py-2 w-full outline-blue-500 placeholder-zinc-500 text-black" />
+                      class="border-1 border-[#EEEEEE] rounded px-4 py-2 w-full outline-blue-500 placeholder-zinc-500 bg-white text-black" />
                 <input v-model="form.phone" type="tel" placeholder="Phone Number*" required
-                      class="border rounded px-4 py-2 w-full outline-blue-500 placeholder-zinc-500 text-black" />
+                      class="border-1 border-[#EEEEEE] rounded px-4 py-2 w-full outline-blue-500 placeholder-zinc-500 bg-white text-black" />
               </div>
               <div>
                 <textarea v-model="form.message"
@@ -95,7 +95,7 @@ const submitForm = () => {
                           rows="4"
                           placeholder="Message*"
                           required
-                          class="border rounded px-4 py-2 w-full outline-blue-500 resize-none placeholder-zinc-500 text-black"></textarea>
+                          class="border-1 border-[#EEEEEE] bg-white rounded px-4 py-2 w-full outline-blue-500 resize-none placeholder-zinc-500 text-black"></textarea>
                           <div class="flex">
                             <div class="w-full text-black">
                               Maximum 400 characters
@@ -106,7 +106,7 @@ const submitForm = () => {
               </div>
 
               <button type="submit"
-                      class="w-full bg-[#00237D] text-white rounded-full px-10 py-2 font-semibold hover:bg-[#001848] transition">
+                      class="w-full bg-[#00237D] text-white rounded-full px-10 py-4 font-semibold hover:bg-[#001848] transition">
                 Submit
               </button>
             </form>
@@ -150,7 +150,7 @@ const submitForm = () => {
           </div>
         </div>
 
-        <div class="py-8">
+        <div class="py-8 my-10">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61412.35758033333!2d100.9029006958008!3d15.842276880183164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311fc078222a5f41%3A0x988f58c198bdb2ca!2sWat%20Takrut%20Hin!5e0!3m2!1sen!2smm!4v1751040312287!5m2!1sen!2smm" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>

@@ -95,10 +95,10 @@ const faqs_technical=[
       <section>
         <!-- FAQ -->
       <div class="bg-gradient-to-r from-[#001848] to-[#001c58] text-white py-12 px-6">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-10">
-          <div class="md:w-1/2">
+        <div class="max-w-[70%] mx-auto flex flex-col md:flex-row  gap-10">
+          <div class="md:w-1/2 mt-8">
             <h2 class="text-2xl font-bold mb-4">Frequently asked questions</h2>
-            <p>
+            <p class="w-[90%]">
               Find quick answers to the most common questions about subscriptions, publishing, contributions, and more. 
             </p>
           </div>
@@ -109,13 +109,14 @@ const faqs_technical=[
       </div>
       </section>
       <section class="py-16 px-4 bg-white">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 py-8 border-b-gray-200 border-b-2">
+        <div class="max-w-[70%] mx-auto grid md:grid-cols-2 gap-12 py-8 border-b-gray-200 border-b-2">
           <!-- Left Section -->
           <div class="flex flex-col items-start">
             <div class="text-3xl font-bold text-[#001848] mb-4">
               <img src="images/arrow-right-down-fill.png" alt="arrow icon"/>
               <!-- <span class="inline-block transform -rotate-45 text-xl">➤</span> -->
-              For Universities & Institutions
+               <div class=" w-[60%] mt-5">For Universities & Institutions</div>
+              
             </div>
           </div>
 
@@ -124,7 +125,7 @@ const faqs_technical=[
             <div
               v-for="(item, index) in faqs"
               :key="index"
-              class="bg-white border rounded-lg shadow-sm overflow-hidden"
+              class="bg-gray-50 border-1 border-[#EEEEEE] rounded-lg shadow-sm overflow-hidden"
             >
               <button
                 @click="toggle(index, 'universities')"
@@ -150,13 +151,13 @@ const faqs_technical=[
             </div>
           </div> 
         </div>
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 py-8 border-b-gray-200 border-b-2">
+        <div class="max-w-[70%] mx-auto grid md:grid-cols-2 gap-12 py-8 border-b-gray-200 border-b-2">
           <!-- Left Section -->
           <div class="flex flex-col items-start">
             <div class="text-3xl font-bold text-[#001848] mb-4">
               <img src="images/arrow-right-down-fill.png" alt="arrow icon"/>
               <!-- <span class="inline-block transform -rotate-45 text-xl">➤</span> -->
-              For Readers
+              <div class=" mt-5">For Readers</div>
             </div>
           </div>
 
@@ -165,7 +166,7 @@ const faqs_technical=[
             <div
               v-for="(item, index) in faqs_readers"
               :key="index"
-              class="bg-white border rounded-lg shadow-sm overflow-hidden"
+              class="bg-gray-50 border-1 border-[#EEEEEE] rounded-lg shadow-sm overflow-hidden"
             >
               <button
                 @click="toggle(index, 'readers')"
@@ -191,22 +192,22 @@ const faqs_technical=[
             </div>
           </div>
         </div>
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-12 py-8">
+        <div class="max-w-[70%] mx-auto grid md:grid-cols-2 gap-12 py-8">
           <!-- Left Section -->
           <div class="flex flex-col items-start">
             <div class="text-3xl font-bold text-[#001848] mb-4">
               <img src="images/arrow-right-down-fill.png" alt="arrow icon"/>
               <!-- <span class="inline-block transform -rotate-45 text-xl">➤</span> -->
-              For Technical Support
+              <div class="mt-5">Technical Support</div>
             </div>
           </div>
 
           <!-- Right Section - Accordion -->
-          <div class="space-y-4">
+          <div class="space-y-4 ">
             <div
               v-for="(item, index) in faqs_technical"
               :key="index"
-              class="bg-white border rounded-lg shadow-sm overflow-hidden"
+              class="bg-gray-50 border-1 border-[#EEEEEE] rounded-lg shadow-sm overflow-hidden"
             >
               <button
                 @click="toggle(index, 'technical')"

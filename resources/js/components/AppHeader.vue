@@ -183,7 +183,7 @@ const toggleMobileMenu = () => {
           <template v-for="(item, index) in mainNavItems" :key="index">
             <Link
               :href="item.href"
-              :class="[navigationMenuTriggerStyle(), activeItemStyles(item.href), 'block px-3 py-2 text-base font-medium rounded-md']"
+              :class="[navigationMenuTriggerStyle({ mobile: true }), activeItemStyles(item.href), 'px-3 py-2 text-base font-medium rounded-md']"
             >
               {{ item.title }}
             </Link>

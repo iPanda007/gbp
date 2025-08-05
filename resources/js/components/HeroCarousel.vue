@@ -1,5 +1,5 @@
-<script setup>
-import { ref } from 'vue'
+<script setup lang="ts">
+import { ref , onMounted, onBeforeUnmount } from 'vue'
 
 const slides = ref([
   {
@@ -33,15 +33,29 @@ const prev = () => {
 const goTo = (index) => {
   currentIndex.value = index
 }
+
+//  Auto Slide Logic
+let interval = null
+
+onMounted(() => {
+  interval = setInterval(() => {
+    next()
+  }, 5000) // 5 seconds
+})
+
+onBeforeUnmount(() => {
+  clearInterval(interval)
+})
+
 </script>
 <template>
-  <div class="relative w-full overflow-hidden bg-gradient-to-l from-blue-800 to-blue-600 text-white custom-height">
+  <div class="relative w-full overflow-hidden bg-gradient-to-br from-[#0C4866] to-[#0428AA] text-white custom-height">
     <!-- Slides -->
-    <div class="flex transition-transform duration-700 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+    <div class="w-[90%] mx-auto flex transition-transform duration-700 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
       <div v-for="(slide, index) in slides" :key="index" class="flex-none w-full flex items-center justify-between py-20 custom-padding">
         <!-- Left text -->
         <div class="max-w-lg">
-          <h2 class="text-4xl font-bold mb-4">{{ slide.title }}</h2>
+          <h2 class="text-4xl font-bold mb-4 leading-[1.5]">{{ slide.title }}</h2>
           <p class="text-lg">{{ slide.subtitle }}</p>
         </div>
         <!-- Right image -->
