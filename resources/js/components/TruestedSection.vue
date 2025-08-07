@@ -1,7 +1,7 @@
 <template>
   <section ref="trustedSection" class="bg-white">
     <!-- Left content -->
-     <div class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-8">
+     <div class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-8" data-aos="fade-up">
       <div class="flex flex-col justify-between">
         <div class="">
         <h2 class="text-2xl md:text-3xl font-extrabold mb-4 custombold">

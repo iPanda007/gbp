@@ -35,7 +35,7 @@ const benefits = [
 
       <!-- Our mission -->
       <div class="bg-white py-25 px-6">
-        <div class="max-w-[70%]  mx-auto flex flex-col md:flex-row items-center gap-10">
+        <div class="max-w-[70%]  mx-auto flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
           <div class="md:w-1/2">
             <h2 class="text-2xl font-bold text-[#001848] mb-4">Our mission</h2>
           </div>
@@ -51,7 +51,7 @@ const benefits = [
 
       <!-- Who we serve -->
       <div class="bg-gray-100 py-30 px-6">
-        <div class="max-w-[70%]  mx-auto">
+        <div class="max-w-[70%]  mx-auto" data-aos="fade-up">
           <h2 class="text-2xl font-bold text-[#001848] mb-10">Who we serve</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Card 1 -->
@@ -75,7 +75,7 @@ const benefits = [
       </div>
     </section>
     <section class="py-16 bg-white">
-    <div class="max-w-[70%] mx-auto">
+    <div class="max-w-[70%] mx-auto" data-aos="fade-up">
       <!-- Heading -->
       <h2 class="text-2xl md:text-3xl font-bold text-[#001848] mb-10">
         Why partner with us?
@@ -86,7 +86,7 @@ const benefits = [
         <div
           v-for="(item, index) in benefits"
           :key="index"
-          class="bg-gray-50 hover:bg-gray-100 p-6 shadow-sm rounded-md border-b-4 border-blue-200 hover:border-blue-600 flex items-start gap-4"
+          class="bg-gray-50 hover:bg-gray-100 p-6 shadow-sm rounded-md border-b-4 border-blue-200 hover:border-blue-600 flex items-start gap-4" data-aos="fade-left"
         >
           <div class="bg-blue-100 text-blue-700 font-bold w-8 h-8 flex items-center justify-center rounded">
             {{ index + 1 }}
@@ -98,7 +98,7 @@ const benefits = [
 
     <!-- CTA Section -->
     <div class="mt-20 bg-[#001848] py-20 px-6 ">
-      <div class="max-w-[75%] mx-auto text-white p-6">
+      <div class="max-w-[75%] mx-auto text-white p-6" data-aos="fade-up">
         <h3 class="text-lg md:text-2xl font-bold text-[#178fff] mb-4">
           Ready to share your knowledge with the world?
         </h3>

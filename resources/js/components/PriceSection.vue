@@ -3,9 +3,9 @@ import {Link} from '@inertiajs/vue3';
 </script>
 <template>
   <section class="bg-white">
-    <div class="max-w-7xl mx-auto px-4 py-12 grid lg:grid-cols-3 gap-8">
+    <div class="max-w-7xl mx-auto px-4 py-12 grid lg:grid-cols-3 gap-8" data-aos="fade-up">
     <!-- Left CTA -->
-    <div class="bg-gboprimary-700 text-white p-8 rounded-xl flex flex-col justify-between">
+    <div class="bg-gboprimary-700 text-white p-8 rounded-xl flex flex-col justify-between" data-aos="fade-right">
       <div>
         <h2 class="text-md font-medium mb-12">
           Are you a university or institution looking to share your insights?
@@ -23,7 +23,7 @@ import {Link} from '@inertiajs/vue3';
     </div>
 
     <!-- Basic Plan -->
-    <div class="border-2 border-gray-100 hover:border-gray-400 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between">
+    <div class="border-2 border-gray-100 hover:border-gray-400 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between" data-aos="fade-down">
       <div>
         <span class="inline-block bg-gray-200 text-sm font-bold px-4 py-1 rounded-full mb-4 text-black">Basic plan</span>
         <p class="text-gray-700 text-sm mb-8 px-4">
@@ -45,7 +45,7 @@ import {Link} from '@inertiajs/vue3';
     </div>
 
     <!-- Premium Plan -->
-    <div class="border-2 border-yellow-200 hover:border-yellow-400 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between relative">
+    <div class="border-2 border-yellow-200 hover:border-yellow-400 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between relative" data-aos="fade-left">
       <div class="absolute -top-3 -right-3">
         <img src="/images/logo/Premium.png" alt="Crown" class="w-8 h-8" />
       </div>

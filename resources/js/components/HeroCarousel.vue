@@ -51,7 +51,7 @@ onBeforeUnmount(() => {
 <template>
   <div class="relative w-full overflow-hidden bg-gradient-to-br from-[#0C4866] to-[#0428AA] text-white custom-height">
     <!-- Slides -->
-    <div class="w-[90%] mx-auto flex transition-transform duration-700 ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
+    <div class="w-[90%] mx-auto flex  h-full transition-transform duration-700  ease-in-out" :style="{ transform: `translateX(-${currentIndex * 100}%)` }">
       <div v-for="(slide, index) in slides" :key="index" class="flex-none w-full flex items-center justify-between py-20 custom-padding">
         <!-- Left text -->
         <div class="max-w-lg">

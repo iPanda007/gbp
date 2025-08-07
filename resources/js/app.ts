@@ -1,5 +1,7 @@
 import '../css/app.css';
+import 'aos/dist/aos.css';
 
+import AOS from 'aos';
 import { createInertiaApp } from '@inertiajs/vue3';
 import { resolvePageComponent } from 'laravel-vite-plugin/inertia-helpers';
 import type { DefineComponent } from 'vue';
@@ -20,6 +22,12 @@ createInertiaApp({
             .use(ZiggyVue)
             .component('QuillEditor', QuillEditor)
             .mount(el);
+
+              // ✅ AOS Init
+        AOS.init({
+            duration: 300,
+            once: true,
+        });
     },
     progress: {
         color: '#4B5563',

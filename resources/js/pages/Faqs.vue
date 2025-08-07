@@ -126,6 +126,7 @@ const faqs_technical=[
               v-for="(item, index) in faqs"
               :key="index"
               class="bg-gray-50 border-1 border-[#EEEEEE] rounded-lg shadow-sm overflow-hidden"
+              data-aos="fade-left"
             >
               <button
                 @click="toggle(index, 'universities')"
@@ -167,6 +168,7 @@ const faqs_technical=[
               v-for="(item, index) in faqs_readers"
               :key="index"
               class="bg-gray-50 border-1 border-[#EEEEEE] rounded-lg shadow-sm overflow-hidden"
+              data-aos="fade-left"
             >
               <button
                 @click="toggle(index, 'readers')"
@@ -208,6 +210,7 @@ const faqs_technical=[
               v-for="(item, index) in faqs_technical"
               :key="index"
               class="bg-gray-50 border-1 border-[#EEEEEE] rounded-lg shadow-sm overflow-hidden"
+              data-aos="fade-left"
             >
               <button
                 @click="toggle(index, 'technical')"

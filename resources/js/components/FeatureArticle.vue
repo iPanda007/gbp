@@ -19,13 +19,13 @@ const preview = computed(() => stripAndTruncate(props.article.content));
 <template>
 
       <Link
-        class="bg-white rounded shadow p-4"
+        class="bg-white border-2 border-gray-100 rounded shadow-lg hover:scale-[1.05] transition-all duration-500 ease-out p-4"
         :href="route('single-article',article.id)"
       >
         <img :src="article.media_url" alt="" class="w-full h-68 object-cover" />
         <div class="p-4">
-          <p class="text-sm text-gbosecondary-700 font-medium mb-3">{{ article.category.name }}</p>
-          <h3 class="text-lg font-semibold mb-4 text-black">{{ article.title }}</h3>
+          <p class="text-sm text-gbosecondary-700 font-medium mb-3">{{ article.category.name || "Design"}} </p>
+          <h3 class="text-lg font-semibold mb-4 text-black">{{ article.title || 'UX review presentations' }}</h3>
           <p class="text-sm text-gray-600 mb-6">{{ preview }}</p>
           <div class="flex items-center gap-2">
             <img
