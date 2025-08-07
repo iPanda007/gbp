@@ -26,10 +26,10 @@ console.log(posts.value.id);
     <AppLayout>
 
         <section class="bg-gbowhite py-12">
-          <div class="grid grid-cols-1 md:grid-cols-4 gap-8 justify-center max-w-6xl mx-auto">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-15 justify-center max-w-6xl mx-auto">
             <!-- Author Info -->
-             <div v-if="posts" class="mb-4 p-4">
-               <div class="md:col-span-1 bg-gbogray p-4 shadow h-[16rem]">
+             <div v-if="posts" class="mb-4">
+               <div class="md:col-span-1 bg-gbogray p-4 shadow h-[14rem] rounded-lg">
               <img :src="posts.user?.avatar ?? '/images/articles/Avatar.png'" class="w-18 h-18 rounded-full" alt="Author" />
               <h3 class="mt-4 font-semibold text-gboblack">{{ posts.user?.name }}</h3>
               <p class="text-sm text-gray-600">{{ posts.user?.university }}</p>
@@ -45,16 +45,17 @@ console.log(posts.value.id);
 
             <!-- Article Content -->
 <div class="md:col-span-3">
-  <div class="bg-white p-6 md:p-10 shadow rounded-lg">
+  <div 
+  >
     <div v-if="posts">
       <!-- Category and Tag -->
       <div class="flex flex-wrap items-center text-sm text-gray-500 mb-3">
-        <span class="bg-gray-100 text-gray-700 px-2 py-1 rounded mr-2">
+        <span class=" text-blue-700 px-2 py-1 rounded mr-2">
           {{ posts.category.name }}
         </span>
         <div class="flex items-center space-x-1">
           <img src="/images/icons/tag.svg" alt="tag" class="w-4 h-4">
-          <span class="text-gray-600">{{ posts.tag.name }}</span>
+          <span class="text-blue-700">{{ posts.tag.name }}</span>
         </div>
       </div>
 

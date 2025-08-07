@@ -88,30 +88,14 @@ const props = defineProps<{
       <HeroCarousel />
     <FeatureArticleTitle/>
     <div class="bg-white" >
-        <div class="max-w-7xl mx-auto px-4 pb-10">
-            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" data-aos="fade-down">
-                <!-- <FeatureArticle v-for="article in props.articles"
-                :key="article.id"
-                :article="article"/> -->
-                <div class="bg-white border-2 border-gray-100  rounded shadow-lg hover:scale-[1.05] transition-all duration-500 ease-out p-4">
-                  <img alt="" class="w-full h-68 object-cover" />
-                  <div class="p-4">
-          <p class="text-sm text-gbosecondary-700 font-medium mb-3">Design </p>
-          <h3 class="text-lg font-semibold mb-4 text-black">UX review presentations</h3>
-          <p class="text-sm text-gray-600 mb-6">Linear helps streamline software projects, sprints, tasks, and bug tracking.'</p>
-          <div class="flex items-center gap-2">
-            <img
-              
-              alt="Author"
-              class="w-8 h-8 rounded-full object-cover"
-            />
-            <div>
-              <p class="text-sm font-medium text-black mb-1">Mg Mg</p>
-              <p class="text-xs text-gray-500">CU </p>
-            </div>
-          </div>
-        </div>
-                </div>
+        <div class="lg:max-w-[70%] max-w-7xl  mx-auto px-4 pb-10">
+            <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" >
+                <FeatureArticle 
+                  v-for="(article, index) in props.articles"
+                :key="article.id" 
+                :article="article"
+                :index="index"
+                />
                 <!-- <div class="bg-white border-2 border-gray-100  rounded shadow-lg hover:scale-[1.05] transition-all duration-500 ease-out p-4">
                   <img alt="" class="w-full h-68 object-cover" />
                   <div class="p-4">
@@ -131,6 +115,8 @@ const props = defineProps<{
           </div>
         </div>
                 </div> -->
+               
+               
                 <!-- test card -->
             </div>
         </div>

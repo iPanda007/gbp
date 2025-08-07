@@ -35,7 +35,7 @@ const benefits = [
 
       <!-- Our mission -->
       <div class="bg-white py-25 px-6">
-        <div class="max-w-[70%]  mx-auto flex flex-col md:flex-row items-center gap-10" data-aos="fade-up">
+        <div class="max-w-[70%]  mx-auto flex flex-col md:flex-row items-center gap-10" data-aos="fade-up" data-aos-duration="1300">
           <div class="md:w-1/2">
             <h2 class="text-2xl font-bold text-[#001848] mb-4">Our mission</h2>
           </div>
@@ -51,7 +51,7 @@ const benefits = [
 
       <!-- Who we serve -->
       <div class="bg-gray-100 py-30 px-6">
-        <div class="max-w-[70%]  mx-auto" data-aos="fade-up">
+        <div class="max-w-[70%]  mx-auto" data-aos="fade-up" data-aos-duration="1300">
           <h2 class="text-2xl font-bold text-[#001848] mb-10">Who we serve</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Card 1 -->
@@ -86,7 +86,7 @@ const benefits = [
         <div
           v-for="(item, index) in benefits"
           :key="index"
-          class="bg-gray-50 hover:bg-gray-100 p-6 shadow-sm rounded-md border-b-4 border-blue-200 hover:border-blue-600 flex items-start gap-4" data-aos="fade-left"
+          class="bg-gray-50 hover:bg-gray-100 p-6 shadow-sm rounded-md border-b-4 border-blue-200 hover:border-blue-600 flex items-start gap-4" data-aos="fade-left" data-aos-duration="1100"
         >
           <div class="bg-blue-100 text-blue-700 font-bold w-8 h-8 flex items-center justify-center rounded">
             {{ index + 1 }}

@@ -4,6 +4,7 @@ import { computed } from 'vue';
 
 const props = defineProps<{
   article: any;
+  index: number;
 }>();
 
 function stripAndTruncate(html:any, length = 100) {
@@ -17,9 +18,11 @@ const preview = computed(() => stripAndTruncate(props.article.content));
 </script>
 
 <template>
-
-      <Link
-        class="bg-white border-2 border-gray-100 rounded shadow-lg hover:scale-[1.05] transition-all duration-500 ease-out p-4"
+      <div
+      class="bg-white  border-2 border-gray-100 rounded shadow-lg hover:scale-[1.05] transition-all duration-500 ease-out p-4"
+      data-aos="fade-down"
+:data-aos-delay="props.index === 0 ? '' : props.index * 100"      >
+        <Link
         :href="route('single-article',article.id)"
       >
         <img :src="article.media_url" alt="" class="w-full h-68 object-cover" />
@@ -40,4 +43,5 @@ const preview = computed(() => stripAndTruncate(props.article.content));
           </div>
         </div>
     </Link>
+      </div>
 </template>

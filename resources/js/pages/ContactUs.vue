@@ -73,7 +73,7 @@ const submitForm = () => {
         <div class="mx-auto grid md:grid-cols-2 gap-8">
 
           <!-- Left Side: Form -->
-          <div class="custom-padding ml-50" data-aos="fade-right">
+          <div class="custom-padding lg:ml-50 " data-aos="fade-right">
             <h2 class="text-2xl md:text-3xl font-bold text-[#001848] mb-6">Send a message</h2>
 
             <form @submit.prevent="submitForm" class="space-y-4">
@@ -129,7 +129,7 @@ const submitForm = () => {
           </div>
 
           <!-- Right Side: Contact Info -->
-          <div class="bg-[#02165C] text-white p-8 space-y-8 py-16 custom-padding" data-aos="fade-left">
+          <div class="bg-[#02165C] text-white p-8 space-y-8 py-16 custom-padding" data-aos="fade-left" data-aos-duration="1100">
             <div >
               <h3 class="text-lg font-semibold mb-2">Contact us</h3>
               <ul class="space-y-2 text-sm">
@@ -150,7 +150,7 @@ const submitForm = () => {
           </div>
         </div>
 
-        <div class="py-8 my-10" data-aos="fade-up">
+        <div class="py-8 my-10" data-aos="fade-up" data-aos-duration="1200">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61412.35758033333!2d100.9029006958008!3d15.842276880183164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311fc078222a5f41%3A0x988f58c198bdb2ca!2sWat%20Takrut%20Hin!5e0!3m2!1sen!2smm!4v1751040312287!5m2!1sen!2smm" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>

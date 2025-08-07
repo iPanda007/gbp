@@ -1,8 +1,8 @@
 <template>
   <section ref="trustedSection" class="bg-white">
     <!-- Left content -->
-     <div class="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-8" data-aos="fade-up">
-      <div class="flex flex-col justify-between">
+     <div class="max-w-7xl lg:max-w-[70%] mx-auto px-6 py-16 grid lg:grid-cols-2 gap-8" data-aos="fade-up">
+      <div class="flex flex-col justify-between" data-aos="fade-right">
         <div class="">
         <h2 class="text-2xl md:text-3xl font-extrabold mb-4 custombold">
           <span class="text-gboprimary-800 font-extrabold">Trusted by</span> <span class="text-gbosecondary-600 font-extrabold">experts worldwide</span>
@@ -57,7 +57,7 @@
       </div>
 
       <!-- Right illustration -->
-      <div class="flex flex-col justify-between items-center">
+      <div class="flex flex-col justify-between items-center" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
         <img src="/images/cuate.png" alt="Illustration" class="max-w-md w-full" />
       </div>
      </div>

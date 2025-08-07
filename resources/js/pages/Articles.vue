@@ -73,7 +73,7 @@ function getPreview(html:any) {
       </div>
       </section>
       <section class="bg-gbowhite py-12">
-        <div class="p-4 max-w-7xl mx-auto">
+        <div class="p-4 max-w-7xl lg:max-w-[70%] mx-auto">
          <div class="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
             <div class="flex gap-4 w-full md:w-auto">
               <div class="border rounded p-1">
@@ -102,9 +102,10 @@ function getPreview(html:any) {
         <div class="">
             <div class="max-w-7xl mx-auto px-4 pb-10">
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                    <FeatureArticle v-for="article in props.articles"
+                    <FeatureArticle v-for="(article, index) in props.articles"
                     :key="article.id"
-                    :article="article"/>
+                    :article="article"
+                    :index="index"/>
                 </div>
             </div>
         </div>

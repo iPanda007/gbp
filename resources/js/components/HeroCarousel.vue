@@ -55,8 +55,8 @@ onBeforeUnmount(() => {
       <div v-for="(slide, index) in slides" :key="index" class="flex-none w-full flex items-center justify-between py-20 custom-padding">
         <!-- Left text -->
         <div class="max-w-lg">
-          <h2 class="text-4xl font-bold mb-4 leading-[1.5]">{{ slide.title }}</h2>
-          <p class="text-lg">{{ slide.subtitle }}</p>
+          <h2 class="text-xl lg:text-4xl font-bold mb-4 leading-[1.5]">{{ slide.title }}</h2>
+          <p class="text-sm lg:text-lg">{{ slide.subtitle }}</p>
         </div>
         <!-- Right image -->
         <img :src="slide.image" alt="Smart Girl" class="rounded-2xl custom-width" />
