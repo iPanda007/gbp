@@ -5,14 +5,11 @@
             <!-- <li v-for="watermark in watermarkes" :key="watermark.id" class="uppercase font-bold">
                 {{ watermark.name }}
             </li> -->
-            <li>
-                <img src="images/watermark/vodafone.png" class="px-2"/> </li>
-
+            <li> <img src="images/watermark/vodafone.png" class="px-2"/> </li>
                 <li><img src="images/watermark/intel.png" class="px-2"/> </li>
                 <li><img src="images/watermark/tesla.png" class="px-2"/> </li>
                 <li><img src="images/watermark/amd.png" class="px-2"/> </li>
                 <li><img src="images/watermark/talkit.png" class="px-2"/> </li>
-            
         </ul>
     </div>
     </template>

@@ -1,6 +1,6 @@
 <script setup lang="ts">
 
-import { Head, Link,usePage } from '@inertiajs/vue3';
+import { Head, Link, usePage } from '@inertiajs/vue3';
 import FeatureArticle from '@/components/FeatureArticle.vue';
 import AppLayout from '@/layouts/AppLayout.vue';
 import { ref, computed } from 'vue';
@@ -32,6 +32,8 @@ const filteredArticles = computed(() => {
     return matchesSearch && matchesCategory && matchesTag
   })
 })
+
+console.log('Filtered Articles:', filteredArticles)
 
 const totalPages = computed(() => Math.ceil(filteredArticles.value.length / perPage))
 

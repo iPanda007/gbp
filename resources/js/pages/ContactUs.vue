@@ -69,12 +69,13 @@ const submitForm = () => {
           </div>
         </div>
       </section>
-      <section class="bg-gray-50">
-        <div class="mx-auto grid md:grid-cols-2 gap-8">
+
+      <section class="bg-[#020E3D]">
+        <div class="mx-auto grid md:grid-cols-2 gap-8  my-10">
 
           <!-- Left Side: Form -->
           <div class="custom-padding lg:ml-50 " data-aos="fade-right">
-            <h2 class="text-2xl md:text-3xl font-bold text-[#001848] mb-6">Send a message</h2>
+            <h2 class="text-2xl md:text-3xl font-bold text-white mb-6">Send a message</h2>
 
             <form @submit.prevent="submitForm" class="space-y-4">
               <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -97,16 +98,16 @@ const submitForm = () => {
                           required
                           class="border-1 border-[#EEEEEE] bg-white rounded px-4 py-2 w-full outline-blue-500 resize-none placeholder-zinc-500 text-black"></textarea>
                           <div class="flex">
-                            <div class="w-full text-black">
+                            <div class="w-full text-gray-500 text-sm">
                               Maximum 400 characters
                             </div>
-                            <div class="w-full text-right text-sm text-black">{{ form.message.length }}/400</div>
+                            <div class="w-full text-right text-sm text-gray-500">{{ form.message.length }}/400</div>
                           </div>
                 
               </div>
 
               <button type="submit"
-                      class="w-full bg-[#00237D] text-white rounded-full px-10 py-4 font-semibold hover:bg-[#001848] transition">
+                      class=" bg-[#00237D] text-white rounded-full px-10 py-3 font-semibold hover:bg-[#001848] transition">
                 Submit
               </button>
             </form>
@@ -150,7 +151,7 @@ const submitForm = () => {
           </div>
         </div>
 
-        <div class="py-8 my-10" data-aos="fade-up" data-aos-duration="1200">
+        <div class="" data-aos="fade-up" data-aos-duration="1200">
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d61412.35758033333!2d100.9029006958008!3d15.842276880183164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x311fc078222a5f41%3A0x988f58c198bdb2ca!2sWat%20Takrut%20Hin!5e0!3m2!1sen!2smm!4v1751040312287!5m2!1sen!2smm" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       </section>
