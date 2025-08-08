@@ -5,7 +5,7 @@ import {Link} from '@inertiajs/vue3';
   <section class="bg-white">
     <div class="max-w-7xl lg:max-w-[70%] mx-auto px-4 py-12 grid lg:grid-cols-3 gap-8" data-aos="fade-up">
     <!-- Left CTA -->
-    <div class="bg-gboprimary-700 text-white p-8 rounded-sm flex flex-col justify-between lg:relative lg:z-10" data-aos="fade-up" data-aos-duration="1100">
+    <div class="bg-gboprimary-700 text-white p-8 rounded-sm flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1100">
       <div>
         <h2 class="text-md font-medium mb-12">
           Are you a university or institution looking to share your insights?
@@ -18,7 +18,7 @@ import {Link} from '@inertiajs/vue3';
       <img
         src="/images/amico.png"
         alt="Partner Illustration"
-        class="mt-8 pl-30 w-full max-h-60 object-contain lg:absolute lg:bottom-6"
+        class="mt-8 pl-30 w-full max-h-60 object-contain"
       />
     </div>
 
@@ -38,10 +38,11 @@ import {Link} from '@inertiajs/vue3';
           <li class="flex px-2"><img src="images/icons/check 1.svg" class="px-2"/> Email support</li>
         </ul>
       </div>
-      <div class="mx-auto">
+      <div class="mx-auto items-start w-full" >
         <p class="text-3xl font-bold mb-4 text-black">$49<span class="text-base font-normal text-gray-300 mb-4">/month</span></p>
-    <Link :href="route('basic-plan')" class="w-80 cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-3.5 rounded-full">Subscribe</Link>
+    
       </div>
+      <Link :href="route('basic-plan')" class="w-full cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-3.5 rounded-full">Subscribe</Link>
     </div>
 
     <!-- Premium Plan -->
@@ -66,10 +67,11 @@ import {Link} from '@inertiajs/vue3';
           <li class="flex px-2"><img src="images/icons/check 1.svg" class="px-2"/> Priority email & chat support</li>
         </ul>
       </div>
-      <div class="mx-auto">
+      <div class="mx-auto items-start w-full">
         <p class="text-3xl font-bold mb-4 text-black">$100<span class="text-base font-normal text-gray-300 mb-4">/month</span></p>
-        <Link :href="route('premium-plan')" class="w-80 cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-3.5 rounded-full">Subscribe</Link>
+        
       </div>
+      <Link :href="route('premium-plan')" class="w-full cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-3.5 rounded-full">Subscribe</Link>
     </div>
   </div>
   </section>
