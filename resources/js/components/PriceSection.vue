@@ -5,7 +5,7 @@ import {Link} from '@inertiajs/vue3';
   <section class="bg-white">
     <div class="max-w-7xl lg:max-w-[70%] mx-auto px-4 py-12 grid lg:grid-cols-3 gap-8" data-aos="fade-up">
     <!-- Left CTA -->
-    <div class="bg-gboprimary-700 text-white p-8 rounded-xl flex flex-col justify-between" data-aos="fade-up" data-aos-duration="1100">
+    <div class="bg-gboprimary-700 text-white p-8 rounded-sm flex flex-col justify-between lg:relative lg:z-10" data-aos="fade-up" data-aos-duration="1100">
       <div>
         <h2 class="text-md font-medium mb-12">
           Are you a university or institution looking to share your insights?
@@ -18,7 +18,7 @@ import {Link} from '@inertiajs/vue3';
       <img
         src="/images/amico.png"
         alt="Partner Illustration"
-        class="mt-8 w-full max-h-60 object-contain"
+        class="mt-8 pl-30 w-full max-h-60 object-contain lg:absolute lg:bottom-6"
       />
     </div>
 

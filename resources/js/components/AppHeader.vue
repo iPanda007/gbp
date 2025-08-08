@@ -28,8 +28,8 @@ const auth = computed(() => page.props.auth);
 const isCurrentRoute = computed(() => (url: string) => page.url === url);
 
 const activeItemStyles = computed(
-    () => (url: string) => (isCurrentRoute.value(url) ? '!text-blue-700 border-b-2 border-blue-700 pb-1'
-        : 'text-neutral-700 hover:text-blue-700'),
+    () => (url: string) => (isCurrentRoute.value(url) ? '!text-[#042499] border-b-2 border-blue-700 pb-1'
+        : 'text-[#042499] hover:text-[#042499]'),
 );
 
 const mainNavItems: NavItem[] = [
@@ -107,7 +107,7 @@ const toggleMobileMenu = () => {
           <!-- CTA Button (Desktop) -->
           <div class="hidden lg:block" >
             <Link :href="route('plans')" v-show="$page.props.auth?.active_subscription?.[0]?.type == null">
-              <Button class="bg-gboprimary-600 hover:bg-gboprimary-700 text-white rounded-full px-6 py-2 text-base font-medium shadow-none min-w-[200px]">
+              <Button class="bg-gboprimary-600 hover:bg-[#042499] text-white rounded-full px-6 py-6 border text-[15px] font-medium shadow-none min-w-[200px]">
                 Become a contributor
               </Button>
             </Link>

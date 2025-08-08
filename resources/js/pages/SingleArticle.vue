@@ -25,7 +25,7 @@ console.log(posts.value.id);
     </Head>
     <AppLayout>
 
-        <section class="bg-gbowhite py-12">
+        <section class="bg-white py-12">
           <div class="grid grid-cols-1 md:grid-cols-4 gap-15 justify-center max-w-6xl mx-auto">
             <!-- Author Info -->
              <div v-if="posts" class="mb-4">

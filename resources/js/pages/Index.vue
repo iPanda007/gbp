@@ -6,6 +6,7 @@ import FeatureArticle from '../components/FeatureArticle.vue';
 import PriceSection from '../components/PriceSection.vue';
 import TruestedSection from '@/components/TruestedSection.vue';
 import FeatureArticleTitle from '@/components/FeatureArticleTitle.vue';
+import SchoolWatermark from '@/components/SchoolWatermark.vue';
 //import Carousel from '@/components/Carousel.vue';
 
 const logos = [
@@ -88,7 +89,7 @@ const props = defineProps<{
       <HeroCarousel />
     <FeatureArticleTitle/>
     <div class="bg-white" >
-        <div class="lg:max-w-[70%] max-w-7xl  mx-auto px-4 pb-10">
+        <div class="lg:max-w-[70%] max-w-7xl  mx-auto px-4 pb-20">
             <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3" >
                 <FeatureArticle 
                   v-for="(article, index) in props.articles"
@@ -115,13 +116,14 @@ const props = defineProps<{
           </div>
         </div>
                 </div> -->
-               
-               
                 <!-- test card -->
             </div>
         </div>
     </div>
+
+       <SchoolWatermark />
       <TruestedSection/>
+      
       <PriceSection/>
     </AppLayout>
 </template>

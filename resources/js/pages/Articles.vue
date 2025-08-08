@@ -76,14 +76,14 @@ function getPreview(html:any) {
         <div class="p-4 max-w-7xl lg:max-w-[70%] mx-auto">
          <div class="flex flex-col md:flex-row justify-between items-center mb-6 gap-4">
             <div class="flex gap-4 w-full md:w-auto">
-              <div class="border rounded p-1">
+              <div class="border-2 border-gray-100 rounded p-1">
                 <select v-model="selectedCategory" class="p-2 w-full md:w-auto text-gboblack outline-none">
                     <option value=""><span class="text-gray-400">Sort by:</span> Category</option>
                     <option v-for="category in props.categories" :key="category.id" :value="category.id">{{ category.name }}</option>
                 </select>
               </div>
                 
-               <div class="border rounded p-1">
+               <div class="border-2 border-gray-100 rounded p-1">
                  <select v-model="selectedTag" class=" p-2 rounded w-full md:w-auto text-gboblack outline-none">
                     <option value=""><span class="text-gray-400">Sort by:</span> Tag</option>
                     <option v-for="tag in props.tags" :key="tag.id" :value="tag.id">{{ tag.name }}</option>
@@ -96,11 +96,11 @@ function getPreview(html:any) {
             v-model="search"
             placeholder="Search"
             name="search"
-            class="border rounded p-2 w-full md:w-84 text-gboblack placeholder-gray-400"
+            class="border-2 border-gray-200 rounded-lg p-2 w-full md:w-84 text-gboblack placeholder-gray-400"
             />
         </div>
         <div class="">
-            <div class="max-w-7xl mx-auto px-4 pb-10">
+            <div class="  mx-auto pb-10">
                 <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                     <FeatureArticle v-for="(article, index) in props.articles"
                     :key="article.id"
