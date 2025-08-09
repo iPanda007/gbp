@@ -59,7 +59,7 @@ const resumeSubscription =()=>{
 
                 <div class="flex justify-end max-w-5xl mx-auto" v-if="$page.props.auth?.grace_period == false">
 
-                    <button @click="cancelSubscription" class=" bg-red-700 hover:bg-red-800 text-white px-4 py-1 cursor-pointer rounded-lg font-medium">Cancel subscription</button>
+                    <button @click="cancelSubscription" class=" bg-red-700 hover:bg-red-800 text-white px-4 py-3 cursor-pointer rounded-lg font-medium">Cancel subscription</button>
                 </div>
 
                 <div class="flex justify-between max-w-5xl mx-auto" v-if="$page.props.auth?.grace_period == true">
@@ -79,9 +79,9 @@ const resumeSubscription =()=>{
 
                 <div class="max-w-5xl mx-auto px-4 py-12 grid lg:grid-cols-2 gap-8">
                 <!-- Basic Plan -->
-                <div class="border rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between">
+                <div class="hover:border-gray-400 border-2 border-gray-50 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between">
                 <div>
-                    <span class="inline-block bg-gray-400 text-sm font-medium px-4 py-1 rounded-full mb-4 text-black">Basic plan</span>
+                    <span class="inline-block bg-gray-400 text-sm font-medium px-4 py-2 rounded-full mb-4 text-black">Basic plan</span>
                     <p class="text-gray-700 text-sm mb-6 px-4">
                     Best for small departments or institutions looking to start sharing content.
                     </p>
@@ -96,18 +96,18 @@ const resumeSubscription =()=>{
                 </div>
                 <div>
                     <p class="text-3xl font-bold mb-2 text-black">$49<span class="text-base font-normal text-gray-300">/month</span></p>
-                    <button v-show="$page.props.auth?.active_subscription?.[0]?.type != null" class="w-full bg-blue-700 hover:bg-blue-800 text-white py-2 rounded-full">Active plan</button>
-                     <Link v-show="$page.props.auth?.active_subscription?.[0]?.type == null" :href="route('premium-plan')" class="w-full cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-2 rounded-full">Subscribe</Link>
+                    <button v-show="$page.props.auth?.active_subscription?.[0]?.type != null" class="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded-full">Active plan</button>
+                     <Link v-show="$page.props.auth?.active_subscription?.[0]?.type == null" :href="route('premium-plan')" class="w-full cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-3 rounded-full">Subscribe</Link>
                 </div>
                 </div>
 
                 <!-- Premium Plan -->
-                <div class="border-2 border-yellow-400 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between relative">
+                <div class="border-2 border-yellow-100 hover:border-yellow-400 rounded-xl p-6 shadow-sm bg-white flex flex-col justify-between relative">
                 <div class="absolute -top-3 -right-3">
                     <img src="/images/logo/Premium.png" alt="Crown" class="w-8 h-8" />
                 </div>
                 <div>
-                    <span class="inline-block bg-yellow-400 text-sm font-medium px-4 py-1 rounded-full mb-4 text-black">
+                    <span class="inline-block bg-yellow-400 text-sm font-medium px-4 py-2 rounded-full mb-4 text-black">
                     Premium plan
                     </span>
                     <p class="text-gray-700 text-sm mb-6 px-4">
@@ -124,10 +124,11 @@ const resumeSubscription =()=>{
                 </div>
                 <div>
                     <p class="text-3xl font-bold mb-2 text-black">$100<span class="text-base font-normal text-gray-300">/month</span></p>
-                     <Link v-show="$page.props.auth?.active_subscription?.[0]?.type != 'premium'" :href="route('premium-plan')" class="w-full cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-2 rounded-full">Subscribe</Link>
-                     <button v-show="$page.props.auth?.active_subscription?.[0]?.type == 'premium'" class="w-full bg-blue-700 hover:bg-blue-800 text-white py-2 rounded-full">Active plan</button>
+                     <Link v-show="$page.props.auth?.active_subscription?.[0]?.type != 'premium'" :href="route('premium-plan')" class="w-full cursor-pointer inline-block text-center bg-gboprimary-600 hover:bg-gboprimary-700 text-white py-3 rounded-full">Subscribe</Link>
+                     <button v-show="$page.props.auth?.active_subscription?.[0]?.type == 'premium'" class="w-full bg-blue-700 hover:bg-blue-800 text-white py-3 rounded-full">Active plan</button>
                 </div>
                 </div>
+                
                 </div>
             </section>
     </AdminAppLayout>

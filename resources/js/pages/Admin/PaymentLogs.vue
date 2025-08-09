@@ -24,9 +24,9 @@ const props = defineProps<{
         <section class="bg-gbowhite h-full">
             <div class="p-4 md:p-8">
                 <div class="items-center mb-4 text-gboblack">
-                    <h2 class="text-xl font-semibold my-5">Payment Logs</h2>
+                    <h2 class="text-2xl font-semibold my-5">Payment Logs</h2>
 
-                    <div class="overflow-x-auto rounded-lg shadow">
+                    <div class="overflow-x-auto rounded-lg shadow-lg">
                         <table class="min-w-full table-auto border-collapse text-sm text-left text-gboblack">
                             <thead class="bg-gray-100 sticky top-0 z-10 shadow-sm">
                                 <tr>

@@ -117,7 +117,7 @@ const toggleMobileMenu = () => {
               </Button>
             </Link>
 
-            <Button v-show="$page.props.auth?.active_subscription?.[0]?.type == 'premium'" class="bg-gboprimary-600 hover:bg-gboprimary-700 text-white rounded-full px-6 py-2 text-base font-medium shadow-none min-w-[200px]">
+            <Button v-show="$page.props.auth?.active_subscription?.[0]?.type == 'premium'" class="bg-gboprimary-600 hover:bg-gboprimary-700 text-white rounded-full px-6 py-6 text-base font-medium shadow-none min-w-[200px]">
             Premium user
             </Button>
 

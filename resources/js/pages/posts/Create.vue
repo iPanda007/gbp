@@ -66,7 +66,8 @@ const handleImageInput = (e: Event) => {
 
     <AdminAppLayout :breadcrumbs="breadcrumbs">
         <section class="bg-gbowhite py-8">
-            <div class="max-w-4xl mx-auto px-6 text-gboblack">
+            <div class="border border-gray-200 rounded-lg shadow-sm max-w-4xl mx-auto p-6 bg-white">
+                <div class="max-w-4xl mx-auto px-6 text-gboblack">
                 <h2 class="text-3xl font-semibold mb-2">Add New Article</h2>
                 <p class="text-sm text-gray-600 mb-6">Fill out the form below to publish a new post.</p>
 
@@ -75,7 +76,7 @@ const handleImageInput = (e: Event) => {
                     <!-- Image Upload -->
                     <div class="grid gap-2">
                          <div v-if="imagePreview" class="mt-2">
-                            <img :src="imagePreview" alt="Preview" class="h-28 w-28 rounded object-cover border border-gray-200 shadow-sm" />
+                            <img :src="imagePreview" alt="Preview" class="h-28 w-28 py-3 rounded object-cover border border-gray-200 shadow-sm" />
                         </div>
                         <Label for="image">Cover Image</Label>
                         <Input
@@ -98,6 +99,7 @@ const handleImageInput = (e: Event) => {
                                 autocomplete="title"
                                 v-model="form.title"
                                 placeholder="Enter your article title here"
+                                
                             />
                             <InputError :message="form.errors.title" />
                         </div>
@@ -185,6 +187,8 @@ const handleImageInput = (e: Event) => {
 
                 </form>
             </div>
+            </div>
+            
         </section>
     </AdminAppLayout>
 </template>

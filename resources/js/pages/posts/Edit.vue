@@ -70,7 +70,8 @@ const handleImageInput = (e: Event) => {
 
     <AdminAppLayout :breadcrumbs="breadcrumbs">
         <section class="bg-gbowhite py-8">
-            <div class="max-w-4xl mx-auto px-6 text-gboblack">
+            <div class="border border-gray-200 rounded-lg shadow-sm max-w-4xl mx-auto p-6 bg-white">
+                <div class="max-w-4xl mx-auto px-6 text-gboblack">
                 <h2 class="text-3xl font-semibold mb-2">Edit Article</h2>
                 <p class="text-sm text-gray-600 mb-6">Update your article's information below.</p>
 
@@ -202,6 +203,8 @@ const handleImageInput = (e: Event) => {
 
                 </form>
             </div>
+            </div>
+            
         </section>
     </AdminAppLayout>
 </template>

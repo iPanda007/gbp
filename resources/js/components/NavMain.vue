@@ -33,7 +33,7 @@ const toggleMenu = (title: string) => {
 
     <SidebarMenu>
       <!-- 🔹 Loop through items -->
-      <template v-for="item in items" :key="item.title">
+      <template v-for="item in items" :key="item.title">  
         <!-- 🔸 Check if item has children -->
         <SidebarMenuItem v-if="item.children">
           <!-- 🔹 Parent with toggle -->
@@ -63,6 +63,7 @@ const toggleMenu = (title: string) => {
                 as-child
                 :is-active="child.href === page.url"
                 :tooltip="child.title"
+                
               >
                 <Link :href="child.href" class="text-sm flex items-center gap-2">
                   <component :is="child.icon" class="w-4 h-4" />

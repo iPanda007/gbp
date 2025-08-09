@@ -112,7 +112,7 @@ const postArticle = () => {
           <textarea v-model="form.video" class="w-full border p-2 rounded h-20" placeholder="Paste YouTube iframe code here"></textarea>
         </div>
 
-        <button type="submit" class="bg-indigo-500 text-white px-6 py-2 rounded hover:bg-indigo-600">
+        <button type="submit" class="bg-indigo-500 text-white px-6 py-3 rounded hover:bg-indigo-600">
           Post Now
         </button>
       </form>

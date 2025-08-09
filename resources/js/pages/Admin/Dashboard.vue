@@ -27,7 +27,7 @@ const props = defineProps<{
     <Head title="Dashboard" />
 
     <AdminAppLayout :breadcrumbs="breadcrumbs">
-    <section class="bg-gray-300">
+    <section class="bg-gray-100">
 <div class="p-4 space-y-6">
     <!-- Summary Cards -->
     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -72,7 +72,7 @@ const props = defineProps<{
     </div>
 
     <!-- Recent Articles Table -->
-    <div class="bg-white border rounded-xl shadow-lg overflow-hidden text-gboblack">
+    <div class="bg-white border-2 border-gray-100 rounded-xl shadow-lg overflow-hidden text-gboblack">
     <div class="flex justify-between items-center px-6 pt-6 pb-2">
         <h2 class="text-xl font-semibold">Recent Articles</h2>
         <span class="text-sm text-gray-400">Updated {{ new Date().toLocaleDateString() }}</span>
@@ -142,7 +142,7 @@ const props = defineProps<{
     </div>
 
     <!-- Chart -->
-    <div class="bg-white border rounded shadow p-4">
+    <div class="bg-white border-2 border-gray-100 rounded shadow p-4">
       <h2 class="text-lg font-semibold mb-4">Monthly Views Trend</h2>
       <MonthlyChart />
     </div>
