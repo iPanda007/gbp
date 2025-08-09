@@ -100,6 +100,7 @@ const handleImageInput = (e: Event) => {
                             type="file"
                             :tabindex="2"
                             @change="handleImageInput"
+                            class="h-10"
                         />
 
                         <InputError :message="form.errors.image" />
@@ -117,6 +118,7 @@ const handleImageInput = (e: Event) => {
                                 autocomplete="title"
                                 v-model="form.title"
                                 placeholder="Edit your article title"
+                                class="py-5"
                             />
                             <InputError :message="form.errors.title" />
                         </div>
@@ -192,7 +194,7 @@ const handleImageInput = (e: Event) => {
                     <div>
                         <Button
                             type="submit"
-                            class="w-full bg-gboprimary-600 hover:bg-gboprimary-800 text-white py-2.5 text-lg font-medium"
+                            class="w-full h-13 bg-gboprimary-600 hover:bg-gboprimary-800 text-white py-2.5 text-lg font-medium"
                             :tabindex="4"
                             :disabled="form.processing"
                         >
